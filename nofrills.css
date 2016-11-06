@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+/* Optional header element */
+#nofrills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Optional styling */
+  height: 60px;
+  background-color: #ccc;
+  padding: 0 5vw;
+}
+
+#nofrills-mobile-menu a {
+  /* Adjust to desired styling of menu links */
+  padding: 1.5vw;
+  text-decoration: none;
+}
+
+.nofrills-active {
+  /* Styling for active element. Try bold, italics, background colour, etc. */
+  border-bottom: 2px solid dodgerblue;
+}
+
+#nofrills-items {
+  display: flex;
+}
+
+#nofrills-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* This will be the mobile breakpoint where the menu collapses. Adjust as needed. */
+@media screen and (max-width: 600px) {
+  #nofrills-toggle {
+    display: flex;
+  }
+
+  #nofrills-items {
+    width: 100vw;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust to the height of your header */
+    left: 0;
+
+    /* Optional styling */
+    border-bottom: 1px solid #ccc;
+  }
+}
+
