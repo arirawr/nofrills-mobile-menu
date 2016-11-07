@@ -54,3 +54,9 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #nofrills-items {
+    display: flex !important;
+  }
+}
+
